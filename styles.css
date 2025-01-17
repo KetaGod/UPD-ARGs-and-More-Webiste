@@ -1,0 +1,251 @@
+/* General Reset */
+body, html, ul, li, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    color: #0d6efd;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.navbar .nav-links a:hover, 
+.navbar .nav-links .active {
+    background: #0d6efd;
+    color: #fff;
+}
+
+/* Header */
+.page-header {
+    background: #0d6efd;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background: #0d6efd;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #0056b3;
+}
+
+/* Episodes Section */
+#episodes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card-content p {
+    margin-bottom: 0.8rem;
+    color: #666;
+}
+
+.card-content a {
+    text-align: center;
+    display: inline-block;
+    background: #0d6efd;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.card-content a:hover {
+    background: #0056b3;
+}
+
+/* Social Media Section */
+.social-media h2 {
+    margin-top: 3rem;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.social-icons .social-icon i {
+    margin-right: 0.5rem;
+}
+
+.social-icons .social-icon:hover {
+    color: #0d6efd;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    background: #333;
+    color: #fff;
+}
+
+.footer a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

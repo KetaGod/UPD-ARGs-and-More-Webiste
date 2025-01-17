@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact the Host - ARGs and More</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ARGs and More</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="polls.html">Polls and Q&A's</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact the Host</h1>
+            <p>Have questions or requests? Feel free to reach out to me :3</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter Your Username">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter Your Message"></textarea>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div id="form-response" class="form-response hidden">
+                <p>Thank you so much for reaching out! I'll get back to you as soon as possible!</p>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <h2>Go Check Out My Socials</h2>
+            <p>For faster response time, go check out my socials:</p>
+            <ul class="social-icons">
+                <li><a href="https://x.com/ketagod666v2" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://t.me/KetaGod" class="social-icon"><i class="fab fa-telegram"></i> Telegram</a></li>
+                <li><a href="https://www.instagram.com/snootloop_/" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 ARGs and More. All Rights Reserved.</p>
+        <a href="https://open.spotify.com/show/5tMbujqGx09ntwlINa3aag?si=ac629a3f71c24227">Listen on Spotify</a>
+    </footer>
+
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const formResponse = document.getElementById('form-response');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            formResponse.classList.remove('hidden');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>

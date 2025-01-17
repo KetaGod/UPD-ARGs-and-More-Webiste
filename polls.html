@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls - ARGs and More</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">ARGs and More</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="polls.html" class="active">Polls</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Polls</h1>
+            <p>Cast your vote and let your voice be heard!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="polls">
+            <h2>Current Polls</h2>
+            <div class="poll" id="poll1">
+                <h3>What is your favorite ARG genre?</h3>
+                <form>
+                    <label>
+                        <input type="radio" name="genre" value="horror"> Horror
+                    </label><br>
+                    <label>
+                        <input type="radio" name="genre" value="mystery"> Mystery
+                    </label><br>
+                    <label>
+                        <input type="radio" name="genre" value="sci-fi"> Sci-Fi
+                    </label><br>
+                    <label>
+                        <input type="radio" name="genre" value="fantasy"> Fantasy
+                    </label><br>
+                    <button type="submit" class="btn btn-primary">Vote</button>
+                </form>
+            </div>
+
+            <div class="poll" id="poll2">
+                <h3>How often do you listen to our podcast?</h3>
+                <form>
+                    <label>
+                        <input type="radio" name="frequency" value="daily"> Daily
+                    </label><br>
+                    <label>
+                        <input type="radio" name="frequency" value="weekly"> Weekly
+                    </label><br>
+                    <label>
+                        <input type="radio" name="frequency" value="monthly"> Monthly
+                    </label><br>
+                    <label>
+                        <input type="radio" name="frequency" value="rarely"> Rarely
+                    </label><br>
+                    <button type="submit" class="btn btn-primary">Vote</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 ARGs and More. All Rights Reserved.</p>
+        <a href="https://open.spotify.com/show/5tMbujqGx09ntwlINa3aag?si=ac629a3f71c24227">Listen on Spotify</a>
+    </footer>
+</body>
+</html>
